@@ -11,9 +11,6 @@ function Two() {
   if (x >= 0) {
     y = x;
   }
-  //else {
-  //     y = x;
-  // }
 }
 
 function Three() {
