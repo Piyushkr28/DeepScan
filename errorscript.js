@@ -1,8 +1,6 @@
-
-
 function One(x) { // ARRAY_INDEX_NEGATIVE
     var arr = [1, 2, 3];
-    if (x >= 0) {
+    if (x < 0) {
         arr[x] = 3;
     }
 }
@@ -66,26 +64,4 @@ function Ten(url) { // UNUSED_VAR_ASSIGN
     console.log(foo);
 }
 
-function CWE_628() { // TOO_MANY_ARGS
-    function add(x, y) {
-        return x + y;
-    }
-    var sum = add(1, 2, 3);
-    console.log(sum);
-}
 
-function CWE_670(x) { // STRAY_SEMICOLON
-    while (++x <= 10) ;
-    {
-        sum += x;
-    }
-}
-
-function CWE_685() { // MISMATCHED_COUNT_OF_ARGS
-    return Math.atan2(a/b);
-}
-
-function CWE_843() { // BAD_TYPE_COERCION
-    var backPosition;
-    return "backgroundPosition: " + backPosition + "px; ";
-}
