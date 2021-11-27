@@ -31,48 +31,48 @@ function Four() {
   }
 }
 
-function Five() {
-  // BAD_ASSIGN_IN_CONDITION
-  var x = -1;
-  if ((x = -1)) console.log("Error!", x);
-}
+// function Five() {
+//   // BAD_ASSIGN_IN_CONDITION
+//   var x = -1;
+//   if ((x = -1)) console.log("Error!", x);
+// }
 
-function Six() {
-  // UNUSED_EXPR
-  this.foo + 42;
-} //
+// function Six() {
+//   // UNUSED_EXPR
+//   this.foo + 42;
+// } //
 
-function Seven() {
-  // SWITCH_CASE_FALL_THROUGH
-  var x;
-  switch (x) {
-    case "1":
-      console.log("Do one thing");
-    case "2":
-      console.log("Do another thing");
-  }
-}
+// function Seven() {
+//   // SWITCH_CASE_FALL_THROUGH
+//   var x;
+//   switch (x) {
+//     case "1":
+//       console.log("Do one thing");
+//     case "2":
+//       console.log("Do another thing");
+//   }
+// }
 
-function Eight() {
-  // CONSTANT_CONDITION
-  var x = "Fo";
-  var y = x + "Bar";
-  if (y === "FooBar") {
-    console.log("Do something");
-  }
-}
+// function Eight() {
+//   // CONSTANT_CONDITION
+//   var x = "Fo";
+//   var y = x + "Bar";
+//   if (y === "FooBar") {
+//     console.log("Do something");
+//   }
+// }
 
-function Nine() {
-  // UNREACHABLE_CODE
-  return;
+// function Nine() {
+//   // UNREACHABLE_CODE
+//   return;
 
-  var bar = 1;
-  console.log(bar);
-}
+//   var bar = 1;
+//   console.log(bar);
+// }
 
-function Ten(url) {
-  // UNUSED_VAR_ASSIGN
-  var foo = url + "?query=deepscan";
-  foo = url.replace(/\s/gi, "");
-  console.log(foo);
-}
+// function Ten(url) {
+//   // UNUSED_VAR_ASSIGN
+//   var foo = url + "?query=deepscan";
+//   foo = url.replace(/\s/gi, "");
+//   console.log(foo);
+// }
