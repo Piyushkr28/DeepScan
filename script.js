@@ -9,7 +9,7 @@ var form6 = document.getElementById('form6');
 var username = document.getElementById('username');
 var password = document.getElementById('password');
 var cnfpassword = document.getElementById('cnfpassword');
-var username_regex = /[A-za-z0-9]+/;
+var username_regex = /[A-Za-z0-9]+/;
 var password_regex = /^[_#][A-Za-z0-9]+/;
 //form2 var
 var fname = document.getElementById("fname");
@@ -26,7 +26,7 @@ var facebook = document.getElementById("facebook");
 var twitter = document.getElementById("twitter");
 var gmail = document.getElementById("gmail");
 var tweet_regex = /^@\w+/;
-var gmail_regex = /^[a-zA-z]+(\.)?(_$)?[a-zA-Z0-9]+(@gmail.com)/;
+var gmail_regex = /^[a-zA-Z]+(\.)?[a-zA-Z0-9]+(@gmail.com)/;
 
 //form5
 var pgmarks = document.getElementById('pgmarks');
