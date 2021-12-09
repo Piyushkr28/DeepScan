@@ -1,7 +1,7 @@
 function One(x) {
   // ARRAY_INDEX_NEGATIVE
   var arr = [1, 2, 3];
-  if (x > 0) {
+  if (x < 0) {
     arr[x] = 3;
   }
 }
@@ -11,23 +11,25 @@ function Two() {
   if (x >= 0) {
     y = x;
   }
+  else{
+    y = x;
+  }
 }
 
 function Three() {
   // NULL_POINTER
-  var obj = 0;
+  var obj = null;
   var y = obj.x;
   console.log(y);
 }
 
 function Four() {
   // BAD_BITWISE_OPERATOR
-  var obj = 0;
+  var obj;
   if (obj && obj.prop) {
     console.log(obj.prop);
   }
 }
-
 
 
 
