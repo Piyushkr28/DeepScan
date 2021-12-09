@@ -26,7 +26,7 @@ var facebook = document.getElementById("facebook");
 var twitter = document.getElementById("twitter");
 var gmail = document.getElementById("gmail");
 var tweet_regex = /^@\w+/;
-var gmail_regex = /^[A-Za-z]+(\.)?(_$)?[a-zA-Z0-9]+(@gmail.com)/;
+var gmail_regex = /^[A-Za-z]+(\.)?[a-zA-Z0-9]+(@gmail.com)/;
 
 //form5
 var pgmarks = document.getElementById('pgmarks');
